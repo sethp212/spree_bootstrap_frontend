@@ -17,10 +17,10 @@ Spree::BaseHelper.module_eval do
   end
 
   def flash_messages(opts = {})
-    opts[:ignore_types] = [:commerce_tracking].concat(Array(opts[:ignore_types]) || [])
+    ignore_types = ["order_completed"].concat(Array(opts[:ignore_types]).map(&:to_s) || [])
 
     flash.each do |msg_type, text|
-      unless opts[:ignore_types].include?(msg_type)
+      unless ignore_types.include?(msg_type)
         concat(content_tag :div, text, class: "alert alert-#{msg_type}")
       end
     end
