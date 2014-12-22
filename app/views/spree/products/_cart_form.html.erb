@@ -25,7 +25,7 @@
     <% end %>
 
     <% if @product.price_in(current_currency) and !@product.price.nil? %>
-      <div data-hook="product_price" class="col-md-5">
+      <div data-hook="product_price" class="col-md-6">
 
         <div id="product-price">
           <h6 class="product-section-title"><%= Spree.t(:price) %></h6>
