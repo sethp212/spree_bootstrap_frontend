@@ -7,8 +7,8 @@
         <ul class="list-group">
           <% @product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
             <li>
-              <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s  %>
-              <%= label_tag "variant_id" do %>
+              <%= label_tag do %>
+                <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s  %>
                 <span class="variant-description">
                   <%= variant_options variant %>
                 </span>
@@ -25,7 +25,7 @@
     <% end %>
 
     <% if @product.price_in(current_currency) and !@product.price.nil? %>
-      <div data-hook="product_price" class="col-md-5">
+      <div data-hook="product_price" class="col-md-6">
 
         <div id="product-price">
           <h6 class="product-section-title"><%= Spree.t(:price) %></h6>
