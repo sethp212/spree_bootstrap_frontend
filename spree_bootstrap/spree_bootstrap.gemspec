@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_bootstrap'
-  s.version     = '2.4.0.rc3'
+  s.version     = '2.4.0'
   s.summary     = 'Switches out Spree’s entire frontend for a bootstrap 3 powered frontend'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'bootstrap-sass', '~> 3.2.0'
   s.add_runtime_dependency 'bootstrap-kaminari-views', '~> 0.0.3'
 
-  s.add_runtime_dependency 'spree_core', '~> 2.4.0.rc3'
-  s.add_runtime_dependency 'spree_frontend', '~> 2.4.0.rc3'
+  s.add_runtime_dependency 'spree_core', '~> 2.4.0'
+  s.add_runtime_dependency 'spree_frontend', '~> 2.4.0'
 end
