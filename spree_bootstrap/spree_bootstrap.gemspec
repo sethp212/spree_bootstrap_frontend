@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib', 'frontend/lib', 'core/lib']
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'sass-rails', '~> 4.0'
+  s.add_runtime_dependency 'sass-rails', '~> 5.0'
   s.add_runtime_dependency 'bootstrap-sass', '~> 3.2.0'
   s.add_runtime_dependency 'bootstrap-kaminari-views', '~> 0.0.3'
 
-  s.add_runtime_dependency 'spree_core', '~> 2.4.0.rc3'
-  s.add_runtime_dependency 'spree_frontend', '~> 2.4.0.rc3'
+  s.add_runtime_dependency 'solidus', '~> 1.1.2'
+  s.add_runtime_dependency 'solidus_frontend', '~> 1.1.2'
 end
