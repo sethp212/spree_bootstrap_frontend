@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'bootstrap-sass', '~> 3.2.0'
   s.add_runtime_dependency 'bootstrap-kaminari-views', '~> 0.0.3'
 
-  s.add_runtime_dependency 'solidus', '~> 1.1.2'
-  s.add_runtime_dependency 'solidus_frontend', '~> 1.1.2'
+  s.add_runtime_dependency 'solidus', '~> 2.2.0.rc1'
+  s.add_runtime_dependency 'solidus_frontend', '~> 2.2.0.rc1'
 end
